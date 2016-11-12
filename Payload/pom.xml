@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>fi-sardion</groupId>
+		<artifactId>varasto-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>.././../mutteri/parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>varasto-payload</artifactId>
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}-${project.version}</name>
+
+
+	<scm>
+		<connection>scm:git:ssh:git@github.com:christopher-harper/trukki.git</connection>
+		<tag>HEAD</tag>
+		<url>https://github.com/christopher-harper/mutteri</url>
+		<developerConnection>scm:git:ssh:git@github.com:christopher-harper/trukki.git</developerConnection>
+	</scm>
+
+	<description>Objects that travel over the socket connection between the client and server.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>utilities</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>		
+	</dependencies>
+	
+	
+</project>
